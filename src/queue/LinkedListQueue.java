@@ -11,11 +11,11 @@ public class LinkedListQueue {
 
     public void enqueue(String value) {
         if (tail == null) {
-            Node newNode = new Node(value,null);
+            Node newNode = new Node(value, null);
             head = newNode;
             tail = newNode;
         } else {
-            tail.next = new Node(value,null);
+            tail.next = new Node(value, null);
             tail = tail.next;
         }
     }
