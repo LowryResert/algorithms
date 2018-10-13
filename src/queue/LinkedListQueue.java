@@ -49,4 +49,17 @@ public class LinkedListQueue {
             this.next = next;
         }
     }
+
+    public static void main(String[] args) {
+        LinkedListQueue queue = new LinkedListQueue();
+        queue.enqueue("l");
+        queue.enqueue("o");
+        queue.enqueue("w");
+        queue.enqueue("r");
+        queue.enqueue("y");
+        queue.enqueue("qing");
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        queue.printAll();
+    }
 }

@@ -52,6 +52,12 @@ public class ArrayQueue {
         System.out.println(queue.enqueue("qing"));
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.enqueue("lowry"));
+        System.out.println("head:" + queue.head);
+        System.out.println("tail:" + queue.tail);
         queue.printAll();
     }
 }
