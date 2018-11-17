@@ -29,11 +29,11 @@ public class Sorts {
         for (int i = 0; i < a.length; i++) {
             //提前推出标志位
             boolean flag = false;
-            for (int j = 0; j < a.length - i - 1; j++){
+            for (int j = 0; j < a.length - i - 1; j++) {
                 if (a[j] > a[j + 1]) {
                     int temp = a[j];
-                    a[j] = a[j+1];
-                    a[j+1] = temp;
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
                     //此次冒泡有数据交换
                     flag = true;
                 }
@@ -77,10 +77,16 @@ public class Sorts {
     //希尔排序
     public static void shellSort(int[] a) {
         if (a.length <= 1) return;
+        int step = a.length / 2;
+        while (step >= 1) {
+            for (int i = step; i < step; i++) {
+
+            }
+        }
     }
 
     public static void main(String[] args) {
-        int[] arrs = new int[] {5,8,3,6,1,8,9,2};
+        int[] arrs = new int[]{5, 8, 3, 6, 1, 8, 9, 2};
 //        bubbleSort(arrs);
 //        insertionSort(arrs);
 //        selectionSort(arrs);
